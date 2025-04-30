@@ -1,0 +1,7 @@
+﻿services:
+  atontask.webapi:
+    image: atontask.webapi
+    build:
+      context: .
+      dockerfile: AtonTask.WebApi/Dockerfile
+
