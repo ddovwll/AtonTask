@@ -5,25 +5,36 @@
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
         <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+        <NoWarn>$(NoWarn);1591</NoWarn>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+      <DocumentationFile>bin\Debug\AtonTask.WebApi.xml</DocumentationFile>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+      <DocumentationFile>bin\Release\AtonTask.WebApi.xml</DocumentationFile>
     </PropertyGroup>
 
     <ItemGroup>
         <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.4"/>
+        <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="8.1.1" />
+        <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="8.1.1" />
     </ItemGroup>
 
     <ItemGroup>
       <Content Include="..\.dockerignore">
         <Link>.dockerignore</Link>
       </Content>
-    </ItemGroup>
-
-    <ItemGroup>
-      <Folder Include="Controllers\" />
+      <Content Update="appsettings.Production.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
     </ItemGroup>
 
     <ItemGroup>
       <ProjectReference Include="..\AtonTask.Application\AtonTask.Application.csproj" />
       <ProjectReference Include="..\AtonTask.Domain\AtonTask.Domain.csproj" />
+      <ProjectReference Include="..\AtonTask.Infrastructure\AtonTask.Infrastructure\AtonTask.Infrastructure.csproj" />
       <ProjectReference Include="..\AtonTask.Infrastructure\AtonTask.Persistence\AtonTask.Persistence.csproj" />
     </ItemGroup>
 

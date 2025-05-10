@@ -15,6 +15,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AtonTask.WebApi", "AtonTask.WebApi\AtonTask.WebApi.csproj", "{3F572879-7EDF-4070-A57D-6FF450FE5531}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AtonTask.Infrastructure", "AtonTask.Infrastructure\AtonTask.Infrastructure\AtonTask.Infrastructure.csproj", "{E2BF3B9B-DF40-4D8D-9F9D-812E098580D5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,8 +39,13 @@ Global
 		{3F572879-7EDF-4070-A57D-6FF450FE5531}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F572879-7EDF-4070-A57D-6FF450FE5531}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3F572879-7EDF-4070-A57D-6FF450FE5531}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2BF3B9B-DF40-4D8D-9F9D-812E098580D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2BF3B9B-DF40-4D8D-9F9D-812E098580D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2BF3B9B-DF40-4D8D-9F9D-812E098580D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2BF3B9B-DF40-4D8D-9F9D-812E098580D5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{1F9028BF-C1C8-4134-9370-A5E387073759} = {9E1C2ECE-B3A7-4318-BD57-9D5F579005AD}
+		{E2BF3B9B-DF40-4D8D-9F9D-812E098580D5} = {9E1C2ECE-B3A7-4318-BD57-9D5F579005AD}
 	EndGlobalSection
 EndGlobal
